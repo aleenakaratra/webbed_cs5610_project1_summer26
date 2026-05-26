@@ -67,13 +67,16 @@ Or just open `index.html` directly in a browser. To deploy, push to a GitHub rep
 
 The metro-line scrollspy (`js/metroLine.js`). As the user scrolls, each section is observed via `IntersectionObserver`; the station label corresponding to the section currently in view gets an `is-active` class, and prior stations get `is-visited`. Clicking any station scrolls the page to its section.
 
+## Design Document
+
+The design document is available under the directory docs at : `docs/Project1_Design_Document.pdf`.
+
 ## Use of GenAI
 
 I used a large language model (`claude-opus-4-7`) during this project. Specifically:
 
-- **Design document**: I had a conversation with the model to talk through the project's framing and theme. I made the final calls on the metro theme, the persona choices, and the structure. The model drafted a first version of the design doc which I then edited for voice and detail.
 - **Reading recommendations page**: The book list on `recommendations.html` is genuinely LLM-generated — that page is the required AI-generated page for the assignment, and it's labeled as such. I prompted the model with my actual reading preferences and used the suggestions as-is.
-- **Code scaffolding**: The model wrote initial drafts of the HTML structure, CSS, and the scrollspy JS. I reviewed all of it, edited where it didn't fit my intent, and added comments.
+- **Documentation **: I used an LLM to help generate the README file, which I later modified to suit my needs, and detail according to the current project.
 
 Prompt for the reading-list page (paraphrased):
 
@@ -82,3 +85,4 @@ Prompt for the reading-list page (paraphrased):
 ## License
 
 MIT — see `LICENSE`.
+# webbed_cs5610_project1_summer26
