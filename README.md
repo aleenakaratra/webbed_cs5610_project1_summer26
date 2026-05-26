@@ -28,7 +28,9 @@ npm install     # only needed if you want lint/format/dev-server
 npm start       # serves on http://localhost:8080
 ```
 
-Or just open `index.html` directly in a browser. To deploy, push to a GitHub repo and enable GitHub Pages on the main branch.
+Or just open `index.html` directly in a browser. Or just access the code from the github pages url:
+
+https://aleenakaratra.github.io/webbed_cs5610_project1_summer26/
 
 ## Stack
 
@@ -85,5 +87,4 @@ Prompt for the reading-list page (paraphrased):
 ## License
 
 MIT — see `LICENSE`.
-# webbed_cs5610_project1_summer26
 # webbed_cs5610_project1_summer26
