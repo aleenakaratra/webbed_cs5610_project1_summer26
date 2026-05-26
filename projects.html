@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects - Aleena Mary Karatra</title>
+    <meta
+      name="description"
+      content="Project portfolio of Aleena Mary Karatra — rail signalling software, machine learning, NLP, and IoT projects."
+    />
+    <meta name="author" content="Aleena Mary Karatra" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__brand" href="index.html">
+          <span class="site-nav__bullet" aria-hidden="true"></span>
+          Aleena Mary Karatra
+        </a>
+        <ul class="site-nav__list">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="recommendations.html">Reading</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="metro-line" aria-label="Page sections" data-metro-line>
+      <ol class="metro-line__stations">
+        <li class="metro-line__station" data-station-for="industry">
+          <span class="metro-line__dot"></span>
+          <span class="metro-line__label">Industry</span>
+        </li>
+        <li class="metro-line__station" data-station-for="ml">
+          <span class="metro-line__dot"></span>
+          <span class="metro-line__label">Machine Learning</span>
+        </li>
+        <li class="metro-line__station" data-station-for="nlp">
+          <span class="metro-line__dot"></span>
+          <span class="metro-line__label">NLP</span>
+        </li>
+        <li class="metro-line__station" data-station-for="hackathon">
+          <span class="metro-line__dot"></span>
+          <span class="metro-line__label">Hackathon</span>
+        </li>
+        <li class="metro-line__station" data-station-for="iot">
+          <span class="metro-line__dot"></span>
+          <span class="metro-line__label">IoT</span>
+        </li>
+      </ol>
+    </aside>
+
+    <main id="main" class="content content--projects">
+      <header class="page-header">
+        <p class="page-header__eyebrow">Projects</p>
+        <h1 class="page-header__title">Things I've built</h1>
+        <p class="page-header__lede">
+          Each one is summarised here, for deeper writeups please visit my
+          GitHub.
+        </p>
+      </header>
+
+      <article id="industry" class="project-detail">
+        <header class="project-detail__header">
+          <h2 class="project-detail__title">FBANE Rail Traffic Module</h2>
+          <p class="project-detail__meta">
+            Alstom SA, Hyderabad . July 2024 – July 2025 . C++, C#
+          </p>
+        </header>
+        <img
+          class="project-detail__image"
+          src="images/alstom.JPG"
+          alt="Speaking at the Alstom YEGP program 2024."
+        />
+        <p>
+          A year working on safety-critical signalling software for Indian rail.
+          The FBANE module sits inside a multi-component C++/C# codebase that
+          handles rail traffic management — the kind of system where
+          intermittent bugs in production are not acceptable.
+        </p>
+        <p>
+          My job was a mix of code work (refactoring tangled components into
+          something more maintainable so multiple teams could work on the same
+          codebase) and deployment work (helping commission the NCRTC and Kiwi
+          systems on-site, debugging production issues with engineering and QA).
+          I also wrote setup documentation that became the onboarding path for
+          new engineers, and built a small MDM communication demo used in
+          training.
+        </p>
+        <p>
+          The most useful thing I learned: how to read very large unfamiliar
+          codebases without panicking, and how to make changes confidently in
+          systems where the test suite is incomplete.
+        </p>
+      </article>
+
+      <article id="ml" class="project-detail">
+        <header class="project-detail__header">
+          <h2 class="project-detail__title">Diabetic Retinopathy Grading</h2>
+          <p class="project-detail__meta">
+            CS 6140 team project · 2025 · PyTorch
+          </p>
+        </header>
+        <img
+          class="project-detail__image"
+          src="images/diabeticretino.png"
+          alt="Grad-CAM saliency maps for EfficientNet-B3 on representative validation images of each DR severity class. The model concentrates attention on plausible lesion locations for higher-severity classes."
+        />
+        <p>
+          A team project on automatic grading of diabetic retinopathy from
+          retinal images, using the EyePACS dataset. We compared traditional ML
+          baselines against modern architectures — ViT and ResNet-18 with
+          ordinal regression (CORN) and focal loss to handle the heavy class
+          imbalance in the dataset.
+        </p>
+        <p>
+          The interesting part wasn't the architecture choices, it was the loss
+          function and ordinal-regression decisions. Diabetic retinopathy
+          severity is ordered (mild, moderate, severe, proliferative), and
+          treating it as flat multi-class classification throws away
+          information. CORN respects the ordering.
+        </p>
+        <p class="project-detail__credit">With Barath Keshav.</p>
+      </article>
+
+      <article id="nlp" class="project-detail">
+        <header class="project-detail__header">
+          <h2 class="project-detail__title">Multilingual Emotional TTS</h2>
+          <p class="project-detail__meta">
+            Undergrad capstone . Oct 2023 – May 2024 . Python, PyTorch
+          </p>
+        </header>
+        <img
+          class="project-detail__image"
+          src="images/TTS.png"
+          alt="Waveforms of the natural versus synthesized voice by the TTS engine."
+        />
+        <p>
+          A sentiment-aware text-to-speech pipeline. The pipeline classifies the
+          emotion of input text using BERT, then conditions a StarGAN voice
+          synthesizer on that emotion to inject the appropriate prosody into the
+          output speech.
+        </p>
+        <p>
+          The harder problem was low-resource languages. Most emotional TTS work
+          is in English or Mandarin. I focused on Malayalam, with cross-lingual
+          transfer from Mandarin data. Evaluation was acoustic — comparing
+          amplitude and frequency shifts between the emotion-conditioned outputs
+          and a neutral baseline.
+        </p>
+      </article>
+
+      <article id="hackathon" class="project-detail">
+        <header class="project-detail__header">
+          <h2 class="project-detail__title">Recipe Recommendation System</h2>
+          <p class="project-detail__meta">
+            IEEE Hackathon . May 2023 . Python, scikit-learn
+          </p>
+        </header>
+        <p>
+          1st place at an Intel-sponsored IEEE hackathon. Built a real-time
+          recipe recommender combining collaborative filtering with
+          content-based ranking. Prize was ₹30,000.
+        </p>
+        <p>
+          Honestly, what won this wasn't the model — the team that finished
+          second probably had a more sophisticated approach. What helped was
+          getting the demo working end-to-end and presenting it cleanly under
+          time pressure.
+        </p>
+      </article>
+
+      <article id="iot" class="project-detail">
+        <header class="project-detail__header">
+          <h2 class="project-detail__title">
+            Odor Detection &amp; Notification System
+          </h2>
+          <p class="project-detail__meta">
+            IoT project . Apr 2023 – Sep 2023 . Arduino, ammonia sensors
+          </p>
+        </header>
+        <p>
+          An end-to-end IoT system for campus restroom maintenance. Ammonia
+          sensors detect when conditions exceed a threshold, the system triggers
+          an automatic air freshener, and a mobile alert goes out to cleaning
+          staff on a recurring schedule until the condition clears.
+        </p>
+        <p>
+          Less glamorous than the ML projects, but it shipped, ran on a real
+          campus, and taught me more about hardware reliability than I expected
+          to learn.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © 2026 Aleena Mary Karatra .
+        <a href="https://github.com/" rel="noopener">Source on GitHub</a> · MIT
+        licensed
+      </p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

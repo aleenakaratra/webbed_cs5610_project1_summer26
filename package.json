@@ -1,0 +1,24 @@
+{
+  "name": "aleena-karatra-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage for CS 5610 Project 1",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1",
+    "format": "prettier --write \"**/*.{html,css,js,md}\"",
+    "lint": "eslint js/**/*.js"
+  },
+  "author": "Aleena Mary Karatra",
+  "license": "MIT",
+  "homepage": "https://github.com/",
+  "devDependencies": {
+    "@eslint/css": "^1.2.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.2.0",
+    "eslint": "^9.39.4",
+    "globals": "^17.6.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.2.5"
+  }
+}

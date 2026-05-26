@@ -1,0 +1,172 @@
+/* ============================================================
+   Library theme — applies only when body has .theme-library
+   Loaded on recommendations.html, in addition to main.css.
+   ============================================================ */
+
+.theme-library {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(120, 90, 60, 0.02) 0px,
+      rgba(120, 90, 60, 0.02) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    #f3ede0;
+  color: #2a1f12;
+  font-family: "Cormorant Garamond", "Iowan Old Style", "Palatino",
+    "Georgia", serif;
+  font-size: 18px;
+}
+
+.theme-library .page-header__title,
+.theme-library .reading-list__title {
+  font-family: "Cormorant Garamond", "Palatino", "Georgia", serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* ----- Header bar -------------------------------------------------- */
+
+.theme-library .site-header {
+  background: #f3ede0;
+  border-bottom: 2px solid #6b4423;
+}
+
+.theme-library .site-nav__brand {
+  color: #2a1f12;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  font-style: italic;
+}
+
+.theme-library .site-nav__bullet {
+  background: #6b4423;
+  border-color: #2a1f12;
+  border-radius: 2px;
+  width: 10px;
+  height: 16px;
+}
+
+.theme-library .site-nav__list a {
+  color: #4a3520;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.theme-library .site-nav__list a:hover,
+.theme-library .site-nav__list a[aria-current="page"] {
+  color: #2a1f12;
+  border-bottom-color: #6b4423;
+}
+
+/* ----- Page header ------------------------------------------------- */
+
+.theme-library .page-header {
+  border-bottom: 1px solid #c4b59a;
+  padding-bottom: 2rem;
+}
+
+.theme-library .page-header__eyebrow {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  color: #6b4423;
+}
+
+.theme-library .page-header__title {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.theme-library .page-header__lede {
+  font-size: 1.1rem;
+  color: #4a3520;
+  line-height: 1.65;
+}
+
+.theme-library .page-header__meta {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  color: #6b4423;
+}
+
+/* ----- Reading list — catalog entries ----------------------------- */
+
+.theme-library .reading-list__item {
+  border-bottom: 1px solid #c4b59a;
+  padding: 1.8rem 0 1.8rem 4rem;
+  position: relative;
+}
+
+.theme-library .reading-list__item::before {
+  content: counter(book, decimal-leading-zero);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  color: #6b4423;
+  top: 1.95rem;
+  left: 0;
+  padding: 0.15rem 0.5rem;
+  background: #ebe1c9;
+  border: 1px solid #c4b59a;
+}
+
+.theme-library .reading-list__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+.theme-library .reading-list__author {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  color: #6b4423;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.theme-library .reading-list__item p {
+  color: #4a3520;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.theme-library .reading-list__honest {
+  font-style: italic;
+  color: #6b4423;
+  border-top: 1px dashed #c4b59a;
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* ----- Links ------------------------------------------------------- */
+
+.theme-library a {
+  color: #6b4423;
+  text-decoration-style: dotted;
+  text-decoration-color: #c4b59a;
+}
+
+.theme-library a:hover {
+  color: #2a1f12;
+  text-decoration-style: solid;
+}
+
+/* ----- Footer ------------------------------------------------------ */
+
+.theme-library .site-footer {
+  background: #ebe1c9;
+  border-top: 1px solid #c4b59a;
+  color: #6b4423;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+.theme-library .site-footer a {
+  color: #4a3520;
+}
